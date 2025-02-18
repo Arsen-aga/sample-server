@@ -1,0 +1,57 @@
+:root {
+  // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
+
+  // контейнер
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  // шрифты
+  --font-default: 'Inter';
+  --font-titles: var(--font-default);
+
+  // размер шрифта
+  --defaul-font-size: 16px;
+  --defaul-line-height: calc(135%);
+
+  // брекпоинты
+  --xl: 1230px;
+  --lg: 991.8px;
+  --md: 767.98px;
+  --sm: 575.98px;
+  --xs: 468px;
+
+  // глобаьлные цвета
+  --page-bg: #FFFFFF;
+  --default-color: #272727;
+  --link-color: #021E2F;
+
+
+  // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
+  --primary: #EB6C2D;
+  --primary-hover: #fd691f;
+  --accent: #232C35;
+  --border: #f1f1f1;
+  --section-bg: #f1f1f1;
+  --placeholder: #A2A2A2;
+  --input: #FAFBFC;
+  
+  --bg: rgba(129, 95, 72, 0.63);
+  --def-text: #F5F5F5;
+  --bg-standart: #F3F3F3;
+  --bg-form: #F9F9F9;
+  --danger: #E10000;
+  --light-color: #FFFFFF;
+
+
+  // Отступы для блоков
+  --indent: 100px;
+  @media (max-width: 991.8px) {
+    --indent: 40px;
+  }
+
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}
