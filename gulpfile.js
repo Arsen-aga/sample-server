@@ -107,5 +107,5 @@ exports.scripts = scripts;
 exports.styles = styles;
 exports.watching = watching;
 
-exports.build = series(cleanDist, building);
+exports.build = series(building);
 exports.default = parallel(fonts, styles, images, scripts, pages, watching);
