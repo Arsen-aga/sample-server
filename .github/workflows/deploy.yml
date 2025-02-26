@@ -36,5 +36,5 @@ jobs:
           host: ${{ secrets.BEGET_HOST }}
           username: ${{ secrets.BEGET_USER }}
           key: ${{ secrets.BEGET_PRIVATE_KEY }}
-          source: "dist/*"  # Укажите путь к файлам, которые нужно скопировать
-          target: "/home/t/tataril4/sample.tataril4.beget.tech/public_html"  # Путь на сервере, куда нужно скопировать файлы
+          source: "public_html/*"  # Укажите путь к файлам, которые нужно скопировать
+          target: "/home/t/tataril4/sample.tataril4.beget.tech/"  # Путь на сервере, куда нужно скопировать файлы

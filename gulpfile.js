@@ -81,7 +81,7 @@ function watching() {
 }
 
 function cleanDist() {
-  return src("dist").pipe(clean());
+  return src("public_html").pipe(clean());
 }
 
 function building() {
@@ -96,7 +96,7 @@ function building() {
       "!app/html",
     ],
     { base: "app" }
-  ).pipe(dest("dist"));
+  ).pipe(dest("public_html"));
 }
 
 exports.images = images;
