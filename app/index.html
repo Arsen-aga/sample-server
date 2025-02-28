@@ -11,751 +11,96 @@
 </head>
 
 <body>
-  <div class="body_wrapper main-page" id="home">
+  <div class="body_wrapper">
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo logo" href="/">
-            <img class="header__logo-img" src="images/logo.webp" alt="">
+            <img class="logo__img" src="images/logo.webp" alt="">
+            <p class="logo__text">
+              ИТ-оборудование<br>
+              для бизнеса и госсектора
+            </p>
           </a>
-          <div class="header__item header__work">
-            
-            <div class="header__item-rigth">
-              <p class="header__item-text">
-                Работаем без выходных <br>
-                с 8:00 до 20:00
-              </p>
+          <div class="header__item">
+            <div class="header__item-top">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2747_27)">
+<path d="M16.4872 15.6513C12.1641 15.6513 7.84615 15.6615 3.52308 15.6615C3.48718 15.6513 3.45128 15.6308 3.41538 15.6256C1.48205 15.3744 0.0205128 13.7385 0.0102564 11.7897C0 9.14872 0 6.51282 0 3.8718C0.0102564 2.24103 1.07179 0.769231 2.61026 0.241026C2.90256 0.138462 3.21026 0.0871795 3.51282 0.0102564C7.8359 0.0102564 12.1538 0 16.4769 0C16.5128 0.0102564 16.5487 0.0307692 16.5846 0.0358974C18.2051 0.251282 19.5026 1.42051 19.8821 3.01026C19.9231 3.17949 19.9538 3.34872 19.9897 3.52308C19.9897 6.38974 19.9949 9.26154 20 12.1282C19.9897 12.1641 19.9692 12.2 19.9641 12.2359C19.7282 13.7487 18.9077 14.8051 17.4923 15.3795C17.1744 15.5077 16.8205 15.5641 16.4872 15.6513ZM10 14.0923C12.0051 14.0923 14.0103 14.0923 16.0103 14.0872C17.4154 14.0872 18.4359 13.0667 18.4359 11.6564C18.4359 9.10256 18.4359 6.54359 18.4308 3.98974C18.4308 2.58462 17.4103 1.5641 16 1.56923C12 1.56923 8 1.57436 3.99487 1.57949C2.57436 1.57949 1.55897 2.6 1.55897 4.02051C1.55897 6.5641 1.55897 9.10256 1.5641 11.6462C1.5641 13.0923 2.57436 14.0974 4.02564 14.0974C6.01539 14.0974 8.00513 14.0974 10 14.0923Z" fill="#3D9CFC"/>
+<path d="M13.4148 7.81571C13.6558 8.07212 13.8968 8.31827 14.1327 8.56955C14.9532 9.42596 15.7737 10.2824 16.5994 11.1337C16.8045 11.349 16.9224 11.5901 16.8558 11.8926C16.7942 12.1901 16.6148 12.3952 16.3173 12.4824C16.0045 12.5798 15.7378 12.4926 15.5173 12.267C15.1019 11.8413 14.6968 11.4106 14.2866 10.9849C13.6353 10.308 12.9891 9.63109 12.3532 8.96955C12.1327 9.17981 11.9122 9.37981 11.6968 9.58494C11.0353 10.2311 10.2609 10.4465 9.3686 10.2208C8.95835 10.1131 8.60963 9.89263 8.30706 9.59007C8.10194 9.38494 7.88142 9.19007 7.61988 8.94904C7.6045 8.97468 7.57373 9.04648 7.52758 9.09776C6.52758 10.1439 5.52758 11.1901 4.5327 12.2362C4.32245 12.4567 4.07117 12.5798 3.76347 12.5183C3.15322 12.3952 2.92758 11.6772 3.35322 11.2055C3.64553 10.8824 3.95322 10.5747 4.25578 10.2567C4.98399 9.49263 5.71732 8.73366 6.44553 7.96955C6.49168 7.9234 6.53271 7.87212 6.58399 7.81571C6.53271 7.7593 6.48142 7.70801 6.43527 7.65673C5.42501 6.61571 4.41476 5.56955 3.39937 4.52853C3.18912 4.31314 3.07629 4.07212 3.13783 3.76955C3.19937 3.47212 3.37886 3.26699 3.67629 3.17981C3.98399 3.08237 4.25578 3.16955 4.47629 3.39519C4.97886 3.90801 5.47629 4.42084 5.97373 4.93878C7.10194 6.10289 8.23014 7.26699 9.36347 8.43109C9.77886 8.86186 10.2199 8.86186 10.6353 8.43109C12.2404 6.76955 13.8507 5.10801 15.4558 3.44135C15.6763 3.21571 15.9224 3.08237 16.2404 3.14391C16.5378 3.20545 16.743 3.38494 16.8353 3.67725C16.9327 3.97981 16.8558 4.24648 16.6404 4.47212C16.2507 4.88237 15.8558 5.2875 15.4609 5.69776C14.825 6.3593 14.184 7.01571 13.543 7.67725C13.5019 7.71827 13.466 7.76442 13.4199 7.81571H13.4148Z" fill="#3D9CFC"/>
+</g>
+<defs>
+<clipPath id="clip0_2747_27">
+<rect width="20" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+              <a href="mailto:sales@crabbit.ru" class="header__item-mail">
+                sales@crabbit.ru
+              </a>
             </div>
+            <a href="#callback" data-fancybox="" class="header__item-link _link">
+              Расчет стоимости
+            </a>
           </div>
-          <div class="header__item header__mail">
-            
-            <div class="header__item-rigth">
-              <a href="mailto:info@tochkabureniya.ru" class="header__item-link _link">
-                info@tochkabureniya.ru
-              </a>
-              <p class="header__item-text">
-                Напишите нам на почту
-              </p>
-            </div>
-          </div>
-          <div class="header__item header__phone">
-            
-            <div class="header__item-rigth">
-              <a class="header__item-number" href="tel:+74996382232">
-                8 499 638-22-32
-              </a>
-              <p class="header__item-point">
-                Сейчас работаем
-              </p>
-              <a href="#callback" data-fancybox="" class="header__item-link _link">
-                Перезвоните нам
+          <div class="header__item">
+            <div class="header__item-top">
+              <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2747_50)">
+<path d="M8.95683 19.9902H3.50805C3.4739 19.9805 3.43488 19.961 3.40073 19.9561C1.47878 19.7024 0.0104897 18.0732 0.00561166 16.1415C0.000733613 12.0439 0.000733613 7.94634 0.00561166 3.84878C0.0104897 2.21951 1.0739 0.75122 2.61049 0.229268C2.90317 0.131707 3.21049 0.0780488 3.50805 0C5.32268 0 7.1422 0 8.95683 0C8.99098 0.0097561 9.03 0.0292683 9.06415 0.0341463C10.6788 0.24878 11.9715 1.41463 12.352 3.00488C12.391 3.17561 12.4251 3.34634 12.4593 3.5122V16.4732C12.4495 16.5073 12.43 16.5463 12.4251 16.5805C12.191 18.0878 11.3666 19.1415 9.96171 19.7171C9.64464 19.8488 9.29342 19.8976 8.95683 19.9854V19.9902ZM10.9032 10.0146C10.9032 8.00488 10.9032 5.99512 10.9032 3.98537C10.9032 2.58049 9.88854 1.56098 8.48366 1.56098C6.9861 1.56098 5.48854 1.56098 3.99098 1.56098C2.57634 1.56098 1.56171 2.57561 1.56171 3.99024C1.56171 7.99024 1.56171 11.9902 1.56171 15.9951C1.56171 17.4146 2.57634 18.4293 3.9861 18.4293C5.47878 18.4293 6.97147 18.4293 8.45927 18.4293C9.88854 18.4293 10.8983 17.4195 10.8983 15.9902C10.8983 14 10.8983 12.0098 10.8983 10.0195L10.9032 10.0146Z" fill="#3D9CFC"/>
+<path d="M6.23778 3.12109C6.49144 3.12109 6.7451 3.12109 6.99388 3.12109C7.44754 3.12597 7.789 3.46744 7.78412 3.91134C7.78412 4.34061 7.44266 4.67719 6.99876 4.68207C6.48656 4.68695 5.97437 4.68695 5.46217 4.68207C5.00851 4.68207 4.66705 4.33085 4.67193 3.89183C4.67193 3.46256 5.01339 3.12597 5.45729 3.12109C5.71583 3.12109 5.97437 3.12109 6.2329 3.12109H6.23778Z" fill="#3D9CFC"/>
+<path d="M6.23285 16.8678C5.97919 16.8678 5.72553 16.8678 5.47675 16.8678C5.01822 16.863 4.67675 16.5312 4.67188 16.0922C4.67188 15.6532 5.01334 15.3117 5.467 15.3069C5.97919 15.3069 6.49139 15.302 7.00358 15.3069C7.44748 15.3069 7.78407 15.6483 7.78895 16.0825C7.78895 16.5117 7.45236 16.8581 7.01334 16.8678C6.7548 16.8727 6.49627 16.8678 6.23773 16.8678H6.23285Z" fill="#3D9CFC"/>
+</g>
+<defs>
+<clipPath id="clip0_2747_50">
+<rect width="13" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+              <a class="header__item-tel" href="tel:+74951060049">
+                +7 495 106 00 49
               </a>
             </div>
+            <a href="#callback" data-fancybox="" class="header__item-link _link header__item-bottom">
+              Перезвоните мне
+            </a>
           </div>
         </div>
       </div>
     </header>
     
 <main class="main">
+<<<<<<< HEAD
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque fugiat error, commodi vero culpa nisi laborum voluptatem ut mollitia amet minima pariatur id beatae dolorem maxime ipsam ducimus? Modi, repudiandae!
   <section class="quiz-block">
+=======
+  <section class="section-1 _section">
+>>>>>>> arsen
   <div class="container">
-    <h2 class="quiz-block__title _title">
-      Сконфигурируйте лестницу <br><span>под свой интерьер</span>
-    </h2>
-  </div>
-  <div class="quiz-block__inner">
-    <div class="container">
-      <form class="quiz quiz-block__form form-submit" action="#" method="POST" enctype="multipart/form-data" novalidate>
-        <input type="hidden" name="from" value="Получить результаты из выбранной отрасли">
-        <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
-        <div class="progress-text">
-          <div class="progress-text__inner">
-            <span class="progress-text__first-word">Осталось</span> <span class="current-step">7</span>
-            <span class="rp-rule__span">вопросов</span> из 7
-          </div>
-        </div>
-        <div class="progress-bar">
-          <div class="quiz-progress__line progress-line">
-            <div class="quiz-progress__line-step line" style="left: -80.5%;" data-left="80.5">
-            </div>
-          </div>
-        </div>
-
-        <div class="step step1 active">
-          <h2 class="quiz-step__title">
-            Вас интересует лестница в помещение или на улицу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-1" class="radio-input" value="На улицу" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img _img" src="images/quiz-1.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      На улицу
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-1" class="radio-input" value="В помещение" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img _img" src="images/quiz-2.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      В помещение
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn" disabled>
-                <span>Предыдущий щаг</span>
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Следующий шаг</span>
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step2 ">
-          <h2 class="quiz-step__title">
-            Вас интересует лестница в помещение или на улицу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Металлокаркас крыльца" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Металлокаркас крыльца
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Береговые лестницы" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Береговые лестницы
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Лестницы в подвал" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лестницы в подвал
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Спуски к воде и причалы" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Спуски к воде и причалы
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value=" Эвакуационные и пожарные лестницы"
-                      required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Эвакуационные и пожарные лестницы
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step3 ">
-          <h2 class="quiz-step__title">
-            Выберите конфигурацию лестницы
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Поворот на 90 градусов">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Поворот на 90 градусов
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Прямая">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Прямая
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Поворот на 180 градусов">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Поворот <br>на 180 градусов
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Другая">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Другая
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step4 ">
-          <h2 class="quiz-step__title">
-            Какова высота от пола первого этажа до
-            пола второго этажа?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="1 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      1 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="2 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      2 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="3 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      3 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="4 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      4 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="5 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      5 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="6 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      6 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="7 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      7 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="8 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      8 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="9 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      9 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="10 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      10 м
-                    </h6>
-                  </label>
-                </div>
-              </div>
-              <div class="quiz-list__bottom">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <p class="quiz-list__variant-text">
-                      Свое значение
-                    </p>
-                    <input type="text" name="quest-4" class="text-input _input" placeholder="Введите свое значение"
-                      maxlength="10">
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step5 ">
-          <h2 class="quiz-step__title">
-            Нужна ли Вам отделка: ступени (обшивка)
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Сосна">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Сосна
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Лиственница">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лиственница
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Бук">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Бук
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Дуб">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Дуб
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Ясень">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Ясень
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Террасная доска">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Террасная доска
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="ПВЛ лист">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      ПВЛ лист
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Чечевица">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Чечевица
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Не нужна">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Не нужна
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step6 ">
-          <h2 class="quiz-step__title">
-            Нужны ли Вам перила?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Деревянные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Деревянные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Металлические">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Металлические
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Кованные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Кованные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Стеклянные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Стеклянные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Из нержавеющей стали">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Из нержавеющей стали
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value=" Лазерной резки">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лазерной резки
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Тросовые">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Тросовые
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="С балясинами">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      С балясинами
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value=" Не нужно">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Не нужно
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step7 ">
-          <h2 class="quiz-step__title">
-            Где территориально нужно установить
-            лестницу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <div class="quiz-list__label">
-                    <p class="quiz-list__variant-text">
-                      Укажите ваше местоположение
-                    </p>
-                    <label>
-                      <input class="form-control _input" list="datalistOptions-2"
-                        placeholder="Введите свое значение" name="quest-7">
-                      <datalist id="datalistOptions-2">
-                        <option value="Адмиралтейский район">Адмиралтейский район</option>
-                        <option value="Василеостровский район">Василеостровский район</option>
-                        <option value="Выборгский район">Выборгский район</option>
-                        <option value="Калининский район">Калининский район</option>
-                        <option value="Кировский район">Кировский район</option>
-                        <option value="Колпинский район">Колпинский район</option>
-                        <option value="Красногвардейский район">Красногвардейский район</option>
-                        <option value="Красносельский район">Красносельский район</option>
-                        <option value="Кронштадтский район">Кронштадтский район</option>
-                        <option value="Курортный район">Курортный район</option>
-                        <option value="Московский район">Московский район</option>
-                        <option value="Невский район">Невский район</option>
-                        <option value="Петроградский район">Петроградский район</option>
-                        <option value="Петродворцовый район">Петродворцовый район</option>
-                        <option value="Приморский район">Приморский район</option>
-                        <option value="Пушкинский район">Пушкинский район</option>
-                        <option value="Фрунзенский район">Фрунзенский район</option>
-                        <option value="Центральный район">Центральный район</option>
-                        <option value="Зеленогорск">Зеленогорск</option>
-                        <option value="Колпино">Колпино</option>
-                        <option value="Кронштадт">Кронштадт</option>
-                        <option value="Ломоносов">Ломоносов</option>
-                        <option value="Павловск">Павловск</option>
-                        <option value="Петергоф">Петергоф</option>
-                        <option value="Пушкин">Пушкин</option>
-                        <option value="Сестрорецк">Сестрорецк</option>
-                        <option value="Красное Село">Красное Село</option>
-                      </datalist>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Отправить на расчет</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step8 quiz-block__last-step last-step ">
-          <div class="form-block__bottom last-step__inner">
-            <div class="form-block__inputs">
-              <input class="form-block__inp _input" type="text" name="name" placeholder="Ваше имя" required>
-              <input class="form-block__inp _input" type="email" name="email" placeholder="Ваш E-mail">
-              <input class="form-block__inp _input" type="tel" name="phone" placeholder="Ваш телефон" required>
-              <label class="section-13__checkbox-block checkbox-block">
-                <input type="checkbox" name="access" required checked>
-                <span>
-                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.24334 2.50072L5.00034 6.74572C4.60934 7.13672 3.97634 7.13672 3.58634 6.74572L0.757344 3.91372C0.367344 3.52372 0.367344 2.89672 0.757344 2.50072C1.14834 2.10672 1.78134 2.10672 2.17234 2.50072L4.29334 4.62372L7.82834 1.08772C8.21934 0.694719 8.85234 0.694719 9.24334 1.08772C9.63334 1.48372 9.63334 2.10672 9.24334 2.50072Z" fill="#EB6C2D"/>
-</svg>
-
-                </span>
-                <p>
-                  Я принимаю условия <a data-fancybox="" class="_link" href="#politics">политики конфиденциальности</a>
-                </p>
-              </label>
-              <button class="form-block__btn _main-btn" type="submit">
-                Получить результат
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
+    <div class="section-1__inner">
+      <div class="section-1__left">
+        <h2 class="section-1__title">
+          Проектирование, производство и монтаж<br>
+          лестниц «любой сложности»
+        </h2>
+        <p class="section-1__subtitle">
+          Напрямую от производителя с пожизненной гарантией на металлокаркас
+        </p>
+        <a class="section-1__btn _main-btn" href="#quiz-modal" data-fancybox="">
+          Рассчитайте стоимость установки
+        </a>
+      </div>
+      <div class="section-1__right">
+        <a class="section-1__right-wrapper relative" href="images/section-1-right.webp" data-fancybox>
+          <img class="section-1__right-img _img" src="images/section-1-right.webp" alt="">
+        </a>
+      </div>
     </div>
   </div>
 </section>
+  
 
 </main>
     <footer class="footer">
