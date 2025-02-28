@@ -1,90 +1,80 @@
 .header {
-  padding: 24px 0;
+  position: absolute;
   background-color: var(--light-color);
-  transition: all .3s linear;
-  position: fixed;
-  top: 0;
+  max-width: 1245px;
+  width: 100%;
+  margin: 18px auto 0;
+  border-radius: 14px;
+  background-color: #F3F3F3;
+  padding: 11px 22px;
   left: 0;
   right: 0;
-  z-index: 100;
-  
-  
+
+
   @include lg {
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    gap: 8px;
+
+    &:nth-child(2) {
+      @include lg {
+        display: none;
+      }
+    }
 
     @include xs {
       gap: 5px;
     }
   }
 
-  &__work {
+  &__item-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
     @include lg {
-      display: none;
+      gap: 8px;
     }
   }
 
-  &__mail {
-    @include md {
-      display: none;
-    }
+  &__item-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28/20*100%);
   }
 
+  &__item-tel {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: calc(28/20*100%);
 
-  &__item-text {
-    font-size: 14px;
-    line-height: 180%;
+    @include lg {
+      font-size: 20px;
+    }
+
+    @include xs {
+      font-size: 18px;
+    }
   }
 
   &__item-link {
-    font-size: 16px;
-    line-height: 125%;
+    margin-left: 34px;
   }
 
-  &__item-number {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 166%;
+  &__item-bottom {
+    margin-left: 26px;
 
     @include xs {
-      font-size: 16px;
-    }
-  }
-
-  &__item-point {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 146%;
-    margin-bottom: 8px;
-    padding-left: 12px;
-    position: relative;
-
-    @include xs {
-      margin-bottom: 4px;
-    }
-
-    &::before {
-      position: absolute;
-      content: '';
-      display: block;
-      height: 5px;
-      width: 5px;
-      border-radius: 50%;
-      left: 0;
-      top: 8px;
-      background-color: var(--primary);
+      font-size: 14px;
     }
   }
 

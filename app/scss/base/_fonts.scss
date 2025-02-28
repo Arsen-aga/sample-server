@@ -1,6 +1,28 @@
 @font-face {
-	font-family: Inter;
+	font-family: Manrope;
 	font-display: swap;
-	src: url("../fonts/Inter.woff2") format("woff2"), url("../fonts/Inter.woff") format("woff");
+	src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
 	font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Manrope;
+	font-display: swap;
+	src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+	font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Manrope;
+	font-display: swap;
+	src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+	font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Manrope;
+	font-display: swap;
+	src: url("../fonts/Manrope-Light.woff2") format("woff2"), url("../fonts/Manrope-Light.woff") format("woff");
+	font-style: normal;
+  font-weight: 300;
 }
