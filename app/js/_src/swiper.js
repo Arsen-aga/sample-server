@@ -1,16 +1,24 @@
-if (document.querySelector(".section-3__swiper")) {
-  new Swiper(".section-3__swiper", {
-    slidesPerView: "auto",
+if (document.querySelector(".section-4__swiper")) {
+  new Swiper(".section-4__swiper", {
+    slidesPerView: 1,
     spaceBetween: 15,
     navigation: {
-      nextEl: ".section-3__swiper-wrapper .swiper-button-next",
-      prevEl: ".section-3__swiper-wrapper .swiper-button-prev",
+      nextEl: ".section-4__swiper-wrapper .swiper-button-next",
+      prevEl: ".section-4__swiper-wrapper .swiper-button-prev",
     },
     pagination: {
-      el: ".section-3__swiper-wrapper .swiper-pagination",
+      el: ".section-4__swiper-wrapper .swiper-pagination",
       clickable: true,
     },
     breakpoints: {
+      468: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      767.98: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
       991.8: {
         slidesPerView: 3,
         spaceBetween: 20,
