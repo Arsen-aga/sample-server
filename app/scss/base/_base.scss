@@ -71,8 +71,8 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50px;
-  max-width: 1880px;
+  border-radius: 30px;
+  max-width: 1920px;
   margin: 0 auto;
 
   @include md {
@@ -151,6 +151,7 @@ a {
   color: white;
   cursor: pointer;
   text-align: center;
+  text-transform: uppercase;
 
   @include lg {
     border-radius: 12px;
