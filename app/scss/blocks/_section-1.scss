@@ -1,17 +1,37 @@
 .section-1 {
   background-image: url('../images/section-1-bg.webp');
-  padding: 60px 0;
-  padding-top: 150px;
+  padding: 150px 0 40px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 
   @include lg {
-    padding: 30px 0;
+    padding: 120px 0 40px;
+  }
+
+  @include md {
+      padding-top: 170px;
   }
 
   &__inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 50px;
+
+    @include xl {
+      margin-bottom: 40px;
+      align-items: center;
+    }
+
+    @include lg {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
 
     @include md {
       flex-wrap: wrap;
@@ -19,22 +39,27 @@
   }
 
   &__left {
-    max-width: 780px;
-    color: var(--light-color);
+    max-width: 545px;
+    margin-top: 70px;
+
+    @include xl {
+      margin-top: 0;
+    }
 
     @include md {
-        max-width: none;
+      max-width: none;
     }
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 65px;
-    line-height: 120%;
-    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: calc(60/54*100%);
+    margin-bottom: 40px;
 
     @include xl {
       font-size: 48px;
+      margin-bottom: 30px;
     }
 
     @include lg {
@@ -45,6 +70,8 @@
     @include md {
       font-size: 38px;
       margin-bottom: 15px;
+
+      br{display: none;}
     }
 
     @include sm {
@@ -53,10 +80,11 @@
   }
 
   &__subtitle {
+    font-weight: 300;
     font-size: 32px;
     line-height: 120%;
     margin-bottom: 40px;
-    max-width: 470px;
+    max-width: 480px;
 
     @include lg {
       font-size: 30px;
@@ -67,6 +95,8 @@
       max-width: none;
       font-size: 26px;
       margin-bottom: 20px;
+
+      br{display: none;}
     }
 
     @include sm {
@@ -75,7 +105,7 @@
   }
 
   &__btn {
-    max-width: 405px;
+    max-width: 400px;
 
     @include lg {
       max-width: 350px;
@@ -83,24 +113,93 @@
   }
 
   &__right {
-    max-width: 360px;
+    max-width: 600px;
     width: 100%;
 
+    @include xl {
+      max-width: 450px;
+    }
+
+    @include lg {
+        max-width: 280px;
+    }
+
     @include md {
-        max-width: none;
+      max-width: none;
     }
   }
 
   &__right-wrapper {
     width: 100%;
-    padding-bottom: calc(640/360*100%);
+    padding-bottom: calc(676/600*100%);
     overflow: hidden;
-    border-radius: 26px;
+    border-radius: 36px;
     display: block;
 
-    @include md {
-        padding-bottom: 63%;
+    @include lg {
+        padding-bottom: 150%;
+        border-radius: 26px;
     }
+
+    @include md {
+      border-radius: 20px;
+      padding-bottom: 63%;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__item {
+    background-color: var(--light-color);
+    border-radius: 30px;
+    padding: 42px 25px 42px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include xl {
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @include lg {
+      width: 300px;
+      border-radius: 16px;
+    }
+  }
+
+  &__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 20px;
+    background-color: var(--primary);
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24/18*100%);
+    letter-spacing: 0.72px;
   }
 
 }

@@ -1,17 +1,19 @@
 ._title {
   font-family: var(--font-default);
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 130%;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: calc(60/52*100%);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+
 
   @include xl {
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 46px;
+    margin-bottom: 50px;
   }
 
   @include lg {
+    font-size: 38px;
     margin-bottom: 30px;
   }
 
@@ -29,7 +31,6 @@
   }
 
   span {
-    font-weight: 700;
     color: var(--primary);
   }
 }
@@ -78,15 +79,15 @@
   line-height: calc(34/26*100%);
   text-align: center;
   color: var(--default-color);
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 
   @include xl {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   @include lg {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     br {
       display: none;
@@ -95,6 +96,6 @@
 
   @include md {
     margin-bottom: 20px;
-
   }
+
 }
