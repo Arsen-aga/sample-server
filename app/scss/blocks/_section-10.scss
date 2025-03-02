@@ -1,0 +1,115 @@
+.section-10 {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+
+  &__img {
+    position: absolute;
+    left: -143px;
+    top: 0;
+    max-width: 868px;
+
+    @include xl {
+      max-width: 450px;
+      position: static;
+      order: 1;
+      margin-left: -60px;
+    }
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  &__list {
+    padding: 40px;
+    box-shadow: 80px 39px 36px rgba(110, 110, 110, 0.01), 45px 22px 30px rgba(110, 110, 110, 0.03), 20px 10px 22px rgba(110, 110, 110, 0.05), 5px 2px 12px rgba(110, 110, 110, 0.06);
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    max-width: 490px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 24px;
+    display: grid;
+    gap: 48px;
+
+    @include xl {
+      margin: 0;
+    }
+
+    @include lg {
+      max-width: none;
+      gap: 25px;
+    }
+
+    @include md {
+      padding: 30px;
+      gap: 15px;
+    }
+
+    @include sm {
+      padding: 20px;
+    }
+  }
+
+  &__list-point {
+    display: flex;
+    gap: 20px;
+
+    @include md {
+      gap: 15px;
+    }
+
+    svg {
+      min-width: 60px;
+      height: 60px;
+
+      @include md {
+        height: 40px;
+        min-width: 40px;
+      }
+    }
+  }
+
+  &__list-info {
+    margin-top: 16px;
+
+    @include md {
+      margin: 0;
+    }
+  }
+
+  &__list-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: calc(34/22*100%);
+
+    @include sm {
+      font-size: 20px;
+    }
+
+    @include xs {
+      font-size: 18px;
+    }
+  }
+
+  &__list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(28/16*100%);
+    margin-top: 9px;
+
+    @include sm {
+      margin-top: 5px;
+    }
+  }
+}

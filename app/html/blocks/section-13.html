@@ -1,0 +1,41 @@
+<section class="section-13 _section">
+  <div class="container">
+    <h2 class="section-13__title _title-light">
+      Широкая <span>вариативность
+        брендирования</span> под любые задачи
+    </h2>
+    <p class="section-13__subtitle _subtitle">
+      от эконом до премиального сегмента
+    </p>
+    <img class="section-13__img" src="images/section-13.webp" alt="section-13">
+    <form class="section-13__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="from" value="Закажите выезд инженера на замер">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <div class="section-13__form-top">
+        <div class="section-13__form-icon">
+          @@include('../../images/icons/phone.svg')
+        </div>
+        <h3 class="section-13__form-title">
+          Введите ваш<br> номер <strong>телефона</strong>
+        </h3>
+      </div>
+      <div class="section-13__form-inner">
+        <input class="section-13__form-inp _input" type="tel" name="phone" placeholder="+7 (900) 000-00-00">
+        <button type="submit" class="section-13__form-btn _main-btn">
+          Получить каталог трендовых<br>
+          кухонь и корпусной мебели
+        </button>
+        <label class="section-13__checkbox-block checkbox-block">
+          <input type="checkbox" name="access" required checked>
+          <span>
+            @@include('../../images/icons/check.svg')
+          </span>
+          <p>
+            Я принимаю условия <a data-fancybox=""  href="#politics">политики
+              конфиденциальности</a>
+          </p>
+        </label>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,135 @@
+.section-12 {
+  padding-top: var(--indent);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) 1fr;
+    gap: 40px;
+
+    @include xl {
+      gap: 20px;
+      display: block;
+    }
+  }
+
+  .cursor {
+    @include xl {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__btns {
+    border-radius: 20px;
+    background-color: var(--primary);
+    box-shadow: 52px 145px 62px rgba(0, 0, 0, 0.01), 30px 81px 52px rgba(0, 0, 0, 0.03), 13px 36px 38px rgba(0, 0, 0, 0.05), 3px 9px 21px rgba(0, 0, 0, 0.06);
+    height: fit-content;
+
+    @include xl {
+      margin-bottom: 20px;
+      display: grid;
+      grid-auto-flow: column;
+      gap: 15px;
+      overflow-x: auto;
+    }
+  }
+
+  &__btn {
+    border-radius: 20px;
+    padding: 25px 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+    cursor: pointer;
+    transition: all .3s ease;
+    color: rgba($color: #ffffff, $alpha: 0.6);
+
+    &.active {
+      background-color: var(--light-color);
+      font-weight: 700;
+      color: var(--default-color);
+    }
+
+    @include xl {
+      width: 300px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item-left {
+    max-width: 450px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    height: fit-content;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include md {
+      width: 100%;
+      gap: 10px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(22/14*100%);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__item-text a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__item-right {
+    max-width: 366px;
+    width: 100%;
+
+    @include lg {
+      max-width: 300px;
+    }
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__item-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(505/366*100%);
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include md {
+      padding-bottom: 69%;
+    }
+  }
+
+  &__item-img{
+    object-position: top;
+  }
+}

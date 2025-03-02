@@ -1,0 +1,88 @@
+.section-15 {
+  padding-top: var(--indent);
+
+  &__swiper-wrapper {
+    padding-bottom: 60px;
+
+    @include xl {
+      padding-bottom: 40px;
+    }
+
+    @include lg {
+      padding-bottom: 30px;
+    }
+
+  }
+
+  .swiper-slide {
+    height: unset;
+  }
+
+  &__item {
+    background-color: var(--primary);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 35px 32px 35px 35px;
+    height: 100%;
+    color: var(--light-color);
+
+    @include xl {
+      padding: 20px;
+    }
+  }
+
+  &__item-icon {
+    margin-bottom: 15px;
+
+    @include xl {
+      margin-bottom: 10px;
+    }
+
+    @include lg {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    line-height: calc(32/24*100%);
+    margin-bottom: 10px;
+
+    @include xl {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    font-size: 18px;
+    line-height: calc(26/18*100%);
+    margin-bottom: 30px;
+
+    @include lg {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-btn {
+    margin-top: auto;
+    background-color: var(--light-color);
+    color: var(--primary);
+    transition: all .3s ease;
+    height: 72px;
+    font-size: 16px;
+
+    &:hover {
+      color: var(--light-color);
+      background-color: var(--primary-hover);
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @include xs {
+      display: none;
+    }
+  }
+}
