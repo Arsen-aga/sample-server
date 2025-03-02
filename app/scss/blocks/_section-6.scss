@@ -1,0 +1,45 @@
+.section-6 {
+  padding-top: var(--indent);
+
+
+  &__item {
+    display: block;
+    border-radius: 30px;
+    background-color: var(--primary);
+
+    &:hover{
+      .section-6__item-title{
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__item-wrapper {
+    position: relative;
+    padding-bottom: calc(148/233*100%);
+    border-radius: 30px;
+    overflow: hidden;
+
+
+    @include xl {
+      padding-bottom: 69%;
+    }
+  }
+
+
+  &__item-title {
+    padding: 12px 10px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--light-color);
+    transition: all .3s ease;
+  }
+
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: var(--accent);
+  }
+}

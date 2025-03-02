@@ -14,6 +14,9 @@ body {
 
 .body_wrapper {
   overflow: hidden;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 a {
@@ -147,7 +150,7 @@ a {
   font-family: var(--font-default);
   font-weight: 600;
   font-size: 18px;
-  line-height: calc(22/18*100%);
+  line-height: calc(24/18*100%);
   color: white;
   cursor: pointer;
   text-align: center;

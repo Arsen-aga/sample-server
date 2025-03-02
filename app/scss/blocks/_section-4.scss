@@ -75,9 +75,9 @@
       margin-top: 10px;
     }
   }
-  
-  .swiper-pagination{
-    display: none;
-  }
 
+  .swiper-button-prev,
+  .swiper-button-next{
+    background-color: var(--accent);
+  }
 }
