@@ -1,0 +1,257 @@
+.section-19 {
+  background-image: url(../images/section-19-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: var(--indent);
+  padding: var(--indent) 0 200px;
+
+  @include xl {
+    padding: var(--indent) 0;
+  }
+
+  &__form {
+    max-width: 510px;
+    padding: 50px;
+    padding-bottom: 38px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-left: auto;
+
+    @include xl {
+      padding: 40px;
+    }
+
+    @include sm {
+      padding: 30px !important;
+    }
+
+    @include xs {
+      padding: 20px 15px !important;
+    }
+
+
+    .form__tz {
+      max-width: 410px;
+
+      label {
+        max-width: 410px;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: left;
+
+    @include xl {
+      br {
+        display: none;
+      }
+    }
+
+    @include sm {
+      font-size: 24px;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+    color: rgb(40, 40, 40);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 136.363636%;
+    letter-spacing: 0%;
+    text-align: left;
+
+    b {
+      font-weight: 500;
+    }
+
+    @include md {
+      font-size: 20px;
+
+      br {
+        display: none;
+      }
+
+      margin-top: 10px;
+    }
+
+    @include sm {
+      font-size: 18px;
+    }
+
+    @include xs {
+      font-size: 16px;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include md {
+      margin-top: 20px;
+    }
+  }
+
+
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 410px;
+    height: 90px;
+
+    @include xs {
+      height: 75px;
+    }
+  }
+
+  &__tz {
+    width: 100%;
+    max-width: 330px;
+
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 144.444444%;
+      letter-spacing: 0%;
+      text-align: left;
+      height: 90px;
+      border: 1px solid rgb(241, 241, 241);
+      border-radius: 12px;
+      width: 100%;
+      background: rgb(255, 255, 255);
+      max-width: 330px;
+      padding: 0 10px;
+      padding-left: 32px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      cursor: pointer;
+
+      @include xs {
+        height: 75px;
+        padding-left: 20px;
+      }
+
+      &::before {
+        font-size: 26px;
+      }
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 90px;
+    max-width: 410px;
+
+    @include xs {
+      height: 75px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-top: 35px;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+
+    @include xl {
+      gap: 20px;
+    }
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      margin-inline: auto;
+      gap: 8px;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    font-size: 22px;
+    text-wrap-mode: nowrap;
+
+    @include xl {
+      font-size: 20px;
+    }
+
+    @include lg {
+      font-size: 18px;
+    }
+
+    &::before {
+      font-size: 22px;
+    }
+
+    a {
+      color: inherit;
+      font-weight: 400;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    @include xl {
+      font-size: 19px;
+    }
+
+    @include xs {
+      text-wrap: nowrap;
+    }
+  }
+
+  .file-name {
+    margin-top: 10px;
+    display: block;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .checkbox-block {
+    margin-top: 15px;
+  }
+}

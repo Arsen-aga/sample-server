@@ -1,0 +1,173 @@
+.section-18 {
+  max-width: 1360px;
+  margin: var(--indent) auto 0;
+  background-color: var(--default-color);
+  border-radius: 60px;
+
+  @include md {
+    border-radius: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @include xl {
+      padding: 40px 0;
+      gap: 50px;
+    }
+
+    @include lg {
+      gap: 30px;
+    }
+
+    @include md {
+      gap: 0;
+    }
+  }
+
+  &__left {
+    max-width: 580px;
+    width: 100%;
+    margin-left: -80px;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__left-wrapper {
+    border-radius: 60px;
+    overflow: hidden;
+    padding-bottom: calc(992/580*100%);
+  }
+
+  &__right {
+    max-width: 614px;
+    width: 100%;
+    color: var(--light-color);
+
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 70px;
+
+    @include xl {
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+
+    @include lg {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    margin-left: 80px;
+    display: grid;
+    gap: 40px;
+    margin-bottom: 60px;
+
+    @include xl {
+      gap: 30px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+
+    @include lg {
+      gap: 15px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list-point {
+    display: flex;
+    gap: 40px;
+
+    svg {
+      margin-top: 14px;
+      width: 36px;
+
+      path {
+        fill: var(--primary);
+      }
+    }
+
+    @include xl {
+      gap: 20px;
+    }
+
+    @include lg {
+      gap: 15px;
+    }
+  }
+
+  &__list-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: calc(30/22*100%);
+    margin-bottom: 10px;
+
+    @include md {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__list-link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__list-ref {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 12px;
+
+    @include md {
+      gap: 5px;
+      margin-top: 5px;
+    }
+
+    svg {
+      margin-top: 0;
+      width: 20px;
+    }
+
+    span {
+      font-weight: 400;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      color: var(--light-color);
+    }
+  }
+
+  &__btn {
+    max-width: 335px;
+    margin-left: 80px;
+
+    @include xl {
+      margin-left: 40px;
+    }
+
+    @include lg {
+      margin-left: 0;
+    }
+  }
+}

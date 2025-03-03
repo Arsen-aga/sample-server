@@ -102,6 +102,62 @@ if (document.querySelector(".section-15__swiper")) {
     },
   });
 }
+if (document.querySelector(".section-21__swiper")) {
+  new Swiper(".section-21__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    navigation: {
+      nextEl: ".section-21__swiper-wrapper .swiper-button-next",
+      prevEl: ".section-21__swiper-wrapper .swiper-button-prev",
+    },
+    pagination: {
+      el: ".section-21__swiper-wrapper .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      767.98: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      991.8:{
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1230: {
+        slidesPerView: 3,
+        spaceBetween: 84,
+      },
+    },
+  });
+}
+if (document.querySelector(".section-22__swiper")) {
+  new Swiper(".section-22__swiper", {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    pagination: {
+      el: ".section-22__swiper .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      991.8: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1230: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
+
 
 if (document.querySelector(".section-7__swipers")) {
   const swiper = new Swiper(".section-7__thumbswiper", {
@@ -195,43 +251,4 @@ if (document.querySelectorAll(".section-14__slide").length > 0) {
     });
   }
 }
-if (document.querySelector(".section-21__swiper")) {
-  new Swiper(".section-21__swiper", {
-    spaceBetween: 15,
-    slidesPerView: "auto",
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-    },
-    breakpoints: {
-      991.8: {
-        spaceBetween: 30,
-      },
-    },
-  });
-}
-if (document.querySelector(".section-23__swiper")) {
-  new Swiper(".section-23__swiper", {
-    spaceBetween: 15,
-    slidesPerView: 1,
-    pagination: {
-      el: ".section-23__swiper .swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      468: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      991.8: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      1230: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
-  });
-}
+

@@ -1,0 +1,91 @@
+.section-22 {
+  padding-top: var(--indent);
+
+  &__swiper {
+    padding-bottom: 65px;
+
+    @include md {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__slide-wrapper {
+    position: relative;
+    display: block;
+    padding-bottom: calc(560/380*100%);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    @include lg {
+      margin-bottom: 15px;
+    }
+
+    @include xs {
+      padding-bottom: 100%;
+    }
+
+    .play__inner {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__slide-info {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 174px;
+
+    @include xl {
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 25px;
+      left: 25px;
+      width: 31px;
+      height: 28px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('../images/icons/quotes.svg');
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 20px;
+      left: 37px;
+      top: -17px;
+      background-image: url('../images/icons/polygon-cloud.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--light-color);
+    }
+  }
+
+  &__slide-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(26/18*100%);
+
+    @include xl {
+      br {
+        display: none;
+      }
+    }
+  }
+
+}
