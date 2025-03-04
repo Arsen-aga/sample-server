@@ -1,0 +1,139 @@
+.section-26 {
+  padding-top: var(--indent);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 285px));
+    gap: 20px;
+    
+    @include xl {
+      gap: 10px;
+    }
+    
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-flow: column;
+      padding-bottom: 10px;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: var(--light-color);
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 22px;
+    overflow: hidden;
+
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-wrapper {
+    display: block;
+    position: relative;
+    height: 185px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 36px;
+    width: 36px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  &__item-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    @include xl {
+      padding: 15px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(28/18*100%);
+    margin-bottom: 4px;
+  }
+
+  &__item-form {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26/16*100%);
+    margin-bottom: 16px;
+
+    @include xl {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-list {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: calc(24/15*100%);
+    display: grid;
+    margin-bottom: 15px;
+
+    @include xl {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-bottom {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 10px;
+      gap: 7px;
+    }
+
+    svg {
+      margin-top: 7px;
+      min-width: 31px;
+    }
+  }
+
+  &__item-price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28/20*100%);
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  &__item-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(22/12*100%);
+  }
+
+  &__item-btn {
+    margin-top: auto;
+    height: 70px;
+    font-size: 14px;
+  }
+}

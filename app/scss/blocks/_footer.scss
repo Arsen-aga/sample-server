@@ -22,18 +22,51 @@
   &__logo {
     display: flex;
     align-items: center;
-    max-width: 295px;
+    max-width: 421px;
     gap: 20px;
 
     @include xl {
-      gap: 15px;
-      max-width: 250px;
+      gap: 0;
+      max-width: 160px;
     }
   }
 
   &__logo-img {
     @include xl {
       max-width: 160px;
+    }
+  }
+
+  &__logo-text{
+    @include xl {
+        display: none;
+    }
+  }
+
+  &__dev-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(22/14*100%);
+      text-decoration: underline;
+      opacity: 0.4;
+      transition: all .3s ease;
+    }
+
+    &:hover{
+      span{
+        color: var(--primary);
+        opacity: 1;
+      }
+      svg path{
+        fill: var(--primary);
+        transition: all .3s ease;
+      }
     }
   }
 
@@ -52,10 +85,7 @@
     }
   }
 
-  &__mail {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  &__mail-info {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -66,6 +96,7 @@
     }
   }
 
+  &__mail-top,
   &__phone-top {
     display: flex;
     align-items: center;
@@ -88,6 +119,7 @@
     }
   }
 
+  &__mail-link,
   &__phone-link {
     margin-left: 25px;
     font-weight: 700;
@@ -96,5 +128,9 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-underline-offset: 5px;
+  }
+
+  &__mail-link {
+    margin-left: 32px;
   }
 }
